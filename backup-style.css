@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #ffe5d4;
+  position: relative;
+}
+
+main {
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #0a0f0d;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .info-left {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .info-left ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header nav .info-left ul li {
+  list-style: none;
+}
+
+header nav .info-left ul li a {
+  color: #ffe5d4;
+  text-decoration: none;
+}
+
+/* logo */
+header nav .logo-inicio {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+header nav .logo-inicio a img {
+  width: auto;
+  height: 80px;
+  background-color: #ffe5d4;
+  border-radius: 45%;
+}
+
+header nav .botones {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav .botones a button {
+  color: #ffe5d4;
+  /* background-color: #739e82; */
+  border-radius: 5px;
+}
+
+/* estilos del contenido del body */
+.home-main {
+  background-color: #ab2340;
+}
+
+.home-main .titulo {
+  text-align: center;
+  padding: 40px;
+  font-weight: bold;
+  color: #ffe5d4;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.home-main .lorem-img {
+  display: flex;
+  align-items: center;
+}
+
+.home-main .lorem-img .lorem-left {
+  padding: 10%;
+  width: 50%;
+}
+.home-main .lorem-img .lorem-left h2 {
+  color: #ffe5d4;
+  font-weight: bold;
+}
+.home-main .lorem-img .lorem-left h3 {
+  color: #ffe5d4;
+  font-size: 20px;
+  padding-right: 200px;
+}
+
+.home-main .lorem-img .imagenes-right {
+  padding: 40px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.home-main .lorem-img .imagenes-right img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10%;
+  padding: 20px;
+}
+
+.home-main .lorem-img .imagenes-right .imagen-1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.home-main .lorem-img .imagenes-right .imagen-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+footer {
+  background-color: #0a0f0d;
+  width: 100%;
+  height: 60px;
+}
+
+footer p {
+  color: #ffe5d4;
+  text-align: center;
+  line-height: 60px;
+  margin: 0;
+}
+
+/* ESTILOS DE LOGIN y sign.HTML  usan lo mismo porque son iguales*/
+main.usuario-main {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #ab2340;
+  padding: 50px;
+}
+
+main.usuario-main .usuario {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 229, 212, 0.3);
+  margin: 10%;
+  border-radius: 5px;
+  gap: 2%;
+}
+main.usuario-main img {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+main.usuario-main img.imagen-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+main.usuario-main img.imagen-2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/* estilos de contacto.html */
+main.contact-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 90%;
+  background-color: #ab2340;
+}
+main.contact-main .titulo {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+  padding-top: 10px;
+}
+main.contact-main .titulo h1 {
+  display: inline;
+
+  background-color: #ffe5d4;
+  border-radius: 10px;
+}
+
+main.contact-main div.datos {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+main.contact-main div.datos div.aplicaciones h3 {
+  font-size: 20px;
+  color: #ffe5d4;
+}
+main.contact-main div.datos div.aplicaciones {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+main.contact-main div.datos section.tu-msj {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+main.contact-main aside.ubi {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 10%;
+}
+
+/* estilos para sobrenosotros.html */
+
+main.sn-main {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  background-color: #ab2340;
+}
+main.sn-main div.titulo {
+  grid-column: 1/3;
+  text-align: center;
+  color: #ffe5d4;
+}
+main.sn-main div.bio {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 5%;
+  color: #ffe5d4;
+}
+
+main.sn-main img {
+  width: 500px;
+  height: 500px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 5%;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 450px) {
+  header nav .info-left {
+    display: none;
+  }
+  header nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+  header nav .botones {
+    display: none;
+  }
+  header nav .navbar-nav ul.dropdown-menu {
+    background-color: #0a0f0d;
+  }
+  header nav .navbar-nav ul li,
+  header nav .navbar-nav ul button {
+    margin-bottom: 10px;
+  }
+  main.home-main h1.titulo {
+    font-size: 20px;
+    padding: 11px 100px;
+    margin: 0;
+  }
+  main.home-main div.lorem-img {
+    display: block;
+  }
+  main.home-main div.lorem-img section.lorem-left {
+    padding: 0;
+    display: block;
+    text-align: center;
+    font-size: 5px;
+    width: auto;
+  }
+  main.home-main div.lorem-img section.lorem-left h2 {
+    text-align: center;
+    padding: 0;
+  }
+  main.home-main div.lorem-img section.lorem-left div.imagenes-right {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+  main.home-main div.lorem-img div.imagenes-right img.imagen-1,
+  main.home-main div.lorem-img div.imagenes-right img.imagen-2 {
+    width: 150px;
+    height: 150px;
+    padding: 0;
+  }
+  main.home-main div.lorem-img section.lorem-left h3 {
+    text-align: center;
+    padding: 0 0 40px 0;
+    margin: 10px 0 0 0;
+  }
+
+  main.home-main div.lorem-img div.imagenes-right {
+    display: none;
+  }
+
+  /* estilos de sobrenosotros mobile */
+  main.sn-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main.sn-main img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 100px;
+  }
+
+  main.sn-main div.bio h2,main.sn-main div.bio h3{
+    font-size: 18px;
+  }
+  footer p{
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  header ul.navbar-nav {
+    display: none;
+  }
+
+  main.home-main div.lorem-img section.lorem-left div.imagenes-right {
+    display: none;
+  }
+}

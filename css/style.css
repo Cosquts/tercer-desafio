@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.barra-nav__container {
+  background-color: #e7ab30;
+}
+.barra-nav__left-link {
+  font-size: 17px;
+  color: #f3f3f3;
+  transition: all 0.2s ease;
+  text-shadow: 0px 0px 8px rgb(5, 5, 5);
+}
+.barra-nav__left-link:hover {
+  color: #2A2C34;
+  text-shadow: 0px 0px 2px rgb(5, 5, 5);
+}
+.barra-nav__left-link:active {
+  transform: scale(0.98);
+  text-decoration: none;
+  text-shadow: none;
+}
+.barra-nav__left-link:focus {
+  color: #2A2C34;
+}
+.barra-nav__right-link {
+  font-size: 17px;
+  color: #f3f3f3;
+  transition: all 0.2s ease;
+  text-shadow: 0px 0px 8px rgb(5, 5, 5);
+  font-weight: bold;
+  transition: all 1s ease;
+}
+.barra-nav__right-link:hover {
+  transition: all 1s ease;
+  text-shadow: 0px 0px 1px rgb(6, 6, 6);
+  color: black;
+}
+.barra-nav__right-link-sign {
+  font-size: 17px;
+  color: #f3f3f3;
+  transition: all 0.2s ease;
+  text-shadow: 0px 0px 8px rgb(5, 5, 5);
+  font-weight: bold;
+  transition: all 1s ease;
+}
+.barra-nav__right-link-sign:hover {
+  color: rgba(255, 0, 0, 0.8);
+  transition: all 1s ease;
+  text-shadow: 0px 0px 1px rgb(5, 5, 5);
+}
+.barra-nav__right-link-sign:focus {
+  color: rgba(255, 0, 0, 0.8);
+}
+.barra-nav__logo-img {
+  width: 160px;
+  margin: 5px;
+  border-radius: 35px;
+  box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.35);
+  transition: all 0.03s ease;
+}
+.barra-nav__logo-img:active {
+  outline: 1.5px solid rgba(42, 44, 52, 0.09);
+  transform: scale(0.98);
+  box-shadow: none;
+}
+.barra-nav__menu {
+  background-color: #e7ab30;
+}
+.barra-nav__menu-img {
+  width: 160px;
+  margin: 5px;
+  border-radius: 35px;
+  box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.35);
+  transition: all 0.03s ease;
+}
+
+body main {
+  margin-top: 75.78px;
+  background-color: #2A2C34;
+}
+body main h1 {
+  color: #eff0f3;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

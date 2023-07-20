@@ -1,0 +1,72 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+.barra-nav {
+  &__container {
+    background-color: $color-principal;
+  }
+
+  &__left {
+    &-link {
+      @include nav-a;
+      &:hover {
+        color: $color-secundario;
+        text-shadow: 0px 0px 2px rgb(5, 5, 5);
+      }
+      &:active {
+        transform: scale(0.98);
+        text-decoration: none;
+        text-shadow: none;
+      }
+      &:focus {
+        color: $color-secundario;
+      }
+    }
+  }
+
+  &__right {
+    &-link {
+      @include nav-a;
+      font-weight: bold;
+      transition: all 1s ease;
+
+      &:hover {
+        transition: all 1s ease;
+        text-shadow: 0px 0px 1px rgb(6, 6, 6);
+        color: black;
+      }
+    }
+    &-link-sign {
+      @include nav-a;
+      font-weight: bold;
+      transition: all 1s ease;
+      &:hover {
+        color: rgba(255, 0, 0, 0.8);
+        transition: all 1s ease;
+        text-shadow: 0px 0px 1px rgb(5, 5, 5);
+      }
+      &:focus {
+        color: rgba(255, 0, 0, 0.8);
+      }
+    }
+  }
+
+  &__logo {
+    &-img {
+      @include logo;
+
+      &:active {
+        outline: 1.5px solid rgba(42, 44, 52, 0.09);
+        transform: scale(0.98);
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__menu {
+    background-color: $color-principal;
+    &-img {
+      @include logo;
+    }
+  }
+}
