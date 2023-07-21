@@ -54,38 +54,39 @@
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
-          >
+           >
             <div class="barra-nav__menu-header offcanvas-header">
-              <a class="barra-nav__menu-a navbar-brand" href="#"
+              <a class="barra-nav__menu-header-a navbar-brand" href="#"
                 ><img
-                  class="barra-nav__menu-img img-logo"
+                  class="barra-nav__menu-header-img img-logo"
                   src="img/logo completo byn.png"
                   alt="logo de la app que lleva al home"
               /></a>
 
               <button
                 type="button"
-                class="btn-close fs-1"
+                class="barra-nav__menu-header-button btn-close fs-1"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active fs-2" aria-current="page" href="#"
+            <div class="barra-nav__menu-main offcanvas-body">
+              <ul class="barra-nav__menu-main-ul navbar-nav justify-content-end flex-grow-1 pe-3">
+                
+                <li class="barra-nav__menu-main-li nav-item">
+                  <a class="barra-nav__menu-main-a nav-link  fs-2" aria-current="page" href="#"
                     >Mi cuenta</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active fs-2" aria-current="page" href="#"
+                <li class="barra-nav__menu-main-li nav-item">
+                  <a class="barra-nav__menu-main-a nav-link  fs-2" aria-current="page" href="#"
                     >Iniciar Sesión</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-2" href="#">Registrarse</a>
+                  <a class="barra-nav__menu-main-a nav-link  fs-2" href="#">Registrarse</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="barra-nav__menu-main-dropdown nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -93,19 +94,15 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Más
+                    Autor
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Contacto</a></li>
                     <li>
                       <a class="dropdown-item" href="#">Sobre nosotros</a>
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
+                   
+                  
                   </ul>
                 </li>
               </ul>

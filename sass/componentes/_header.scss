@@ -23,6 +23,17 @@
       }
     }
   }
+  &__logo {
+    &-img {
+      @include logo;
+
+      &:active {
+        outline: 1.5px solid rgba(42, 44, 52, 0.09);
+        transform: scale(0.98);
+        box-shadow: none;
+      }
+    }
+  }
 
   &__right {
     &-link {
@@ -50,23 +61,5 @@
       }
     }
   }
-
-  &__logo {
-    &-img {
-      @include logo;
-
-      &:active {
-        outline: 1.5px solid rgba(42, 44, 52, 0.09);
-        transform: scale(0.98);
-        box-shadow: none;
-      }
-    }
-  }
-
-  &__menu {
-    background-color: $color-principal;
-    &-img {
-      @include logo;
-    }
-  }
+ 
 }
