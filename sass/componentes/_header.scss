@@ -4,6 +4,7 @@
 .barra-nav {
   &__container {
      background-color: $color-principal;
+     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2)
     }
   &__left {
 
@@ -50,6 +51,8 @@
       @include nav-a;
       font-weight: bold;
       transition: all 1s ease;
+      background-color: hsla(0, 100%, 50%, 0.582);
+      border-radius: 5px;
       &:hover {
         color: rgba(255, 0, 0, 0.8);
         transition: all 1s ease;
