@@ -3,6 +3,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+header {
+  height: 76.78px;
+}
+
 .barra-nav__container {
   background-color: #e7ab30;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -123,35 +127,81 @@
   color: antiquewhite;
 }
 
-body main form {
-  margin: 10%;
+.form-container .form {
   padding: 6%;
-  border: 1px solid #2A2C34;
+  border: 1px solid rgba(3, 104, 3, 0.952);
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
-  height: 70%;
 }
 
 body main {
   background-image: linear-gradient(antiquewhite, #2A2C34);
   height: 100vh;
-  position: relative;
-  top: 76.78px;
-}
-body main h1 {
-  color: #eff0f3;
-}
-body main form {
-  background-color: rgba(12, 255, 12, 0.253);
 }
 
-body main form {
-  margin: 10%;
+.form-container {
+  padding: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container .form {
+  background-color: rgba(12, 255, 12, 0.253);
+  display: flex;
+  flex-direction: column;
+}
+.form-container .form__tittle {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.form-container .form__date {
+  margin-bottom: 15px;
+}
+.form-container .form__date:nth-child(2) {
+  margin-bottom: 9px;
+}
+.form-container .form__date-input {
+  border-radius: 5px;
+  border: 0;
+}
+.form-container .form__additional-remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 17px;
+}
+.form-container .form__additional-remember-text {
+  margin: 0;
+}
+.form-container .form__additional-link {
+  color: rgba(255, 0, 0, 0.9);
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+.form-container .form__submit {
+  background-color: rgba(12, 255, 12, 0.253);
+  border-radius: 3px;
+  border: 1px solid rgb(4, 102, 4);
+  color: rgb(4, 102, 4);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.form-container .form .form-container .form__social-text {
+  text-align: center;
+}
+.form-container .form__social-icons {
+  color: wheat;
+}
+
+.form-container .form {
   padding: 6%;
-  border: 1px solid #2A2C34;
+  border: 1px solid rgba(3, 104, 3, 0.952);
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
-  height: 70%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,21 +2,12 @@
 @import "../base/extend";
 
 body {
+  
   main {
     background-image: linear-gradient($color-claro,$color-secundario);
-    height: 100vh;
-    position: relative;
-    top:76.78px;
-  
+   height: 100vh;
+    
+    
 
-    h1 {
-      color: #eff0f3;
-    }
-
-    form{
-      @extend %card-user;
-      background-color: $bg-login;
-      
-    }
   }
 }

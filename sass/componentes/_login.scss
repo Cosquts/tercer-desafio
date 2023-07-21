@@ -1,2 +1,69 @@
-@import "../base/variables"
-@import "../base/variables"
+@import "../base/variables";
+
+.form-container {
+  padding: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    @extend %card-user;
+    background-color: $bg-login;
+    display: flex;
+    flex-direction: column;
+
+    &__tittle {
+      color: black;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    &__date {
+      margin-bottom: 15px;
+      &:nth-child(2) {
+        margin-bottom: 9px;
+      }
+      &-input {
+        border-radius: 5px;
+        border: 0;
+      }
+    }
+
+    &__additional-remember {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 17px;
+
+      &-text {
+        margin: 0;
+      }
+    }
+    &__additional-link {
+      color: rgba(255, 0, 0, 0.90);
+      text-align: center;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    &__submit{
+        background-color: $bg-login;
+        border-radius: 3px;
+        border: 1px solid $bg-login-border;
+        color: $bg-login-border;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    &
+    &__social-text {
+        text-align: center;
+    }
+
+    &__social-icons{
+        color: wheat;
+    }
+  }
+}

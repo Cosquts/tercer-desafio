@@ -1,6 +1,9 @@
 @import "../base/variables";
 @import "../base/mixin";
 //  Estilos del nav
+header{
+  height: 76.78px;
+}
 .barra-nav {
   &__container {
      background-color: $color-principal;
