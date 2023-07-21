@@ -1,80 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Sobre nosotros</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse - TurnoLink</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+  <body>
     <header>
-        <nav>
-          <div class="info-left">
-            <ul>
-              <li>
-                <a href="contacto.html">Contacto</a>
-              </li>
-              <li>
-                <a href="sobrenosotros.html">Sobre Nosotros</a>
-              </li>
-              <li>
-                <a href="../index.html">Inicio</a>
-              </li>
-            </ul>
-          </div>
-  
-          <div class="logo-inicio">
-            <a href="../index.html" class="content-logo"
-              ><img src="../img/logo.png" alt="Logo del home"
-            /></a>
-          </div>
-  
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                
-              </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <button class="btn btn-success ">Iniciar sesión</button>
-                <button class="btn btn-danger ">Registrarse</button>      
-                <li><a class="dropdown-item" href="#">Contacto</a></li>
-                <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+      <nav class="barra-nav navbar fixed-top p-0">
+        <div class="barra-nav__container container-fluid justify-content-around d-flex">
+          <nav class="barra-nav__left nav d-none d-md-flex">
+            <a class="barra-nav__left-link nav-link" href="../pages/contacto.html">Contacto</a>
+            <a class="barra-nav__left-link nav-link" href="sobrenosotros.html">Sobre nosotros</a>
+          </nav>
+          <a class="barra-nav__logo navbar-brand" href="../index.html"><img
+              class="barra-nav__logo-img"
+              src="../img/logo header turnolink.png"
+              alt="Imagen usada para el boton que lleva al inicio de la página"/></a>
+          <nav class="barra-nav__right nav d-none d-md-flex">
+            <a class="barra-nav__right-link nav-link" href="../pages/login.html">Inicia sesión</a>
+            <a class="barra-nav__right-link-sign nav-link" href="signup.html">Registrate</a>
+          </nav>
+          <button
+            class="barra-nav__button navbar-toggler d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="barra-nav__menu offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="barra-nav__menu-header offcanvas-header">
+              <a class="barra-nav__menu-header-a navbar-brand" href="../index.html">
+                <img class="barra-nav__menu-header-img img-logo"
+                src="../img/logo completo byn.png"
+                alt="logo de la app que lleva al home"/>
+               </a>
+              <button
+                type="button"
+                class="barra-nav__menu-header-button btn-close fs-1"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="barra-nav__menu-main offcanvas-body">
+              <ul
+                class="barra-nav__menu-main-ul navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="barra-nav__menu-main-li nav-item">
+                  <a
+                    class="barra-nav__menu-main-a nav-link fs-2"
+                    aria-current="page"
+                    href="#">Mi cuenta</a>
+                </li>
+                <li class="barra-nav__menu-main-li nav-item">
+                  <a class="barra-nav__menu-main-a nav-link fs-2"
+                    aria-current="page"
+                    href="../pages/login.html">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="barra-nav__menu-main-a nav-link fs-2" href="signup.html">Registrarse</a>
+                </li>
+                <li class="barra-nav__menu-main-dropdown nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Autor
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                    <li>
+                      <a class="dropdown-item" href="sobrenosotros.html">Sobre nosotros</a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-
-          <div class="botones">
-            <a href="login.html">
-              <button class="btn btn-success btn-outline-light">Iniciar sesión</button>
-            </a>
-            <a href="signup.html">
-              <button class="btn btn-danger btn-outline-light">Registrarse</button>
-            </a>
+            </div>
           </div>
-        </nav>
-      </header>
-    
-    <main class="sn-main">
-        <div class="titulo"><h1>Lorem ipsum dolor.</h1></div>
-        
-
-        <img src="../img/Foto del desarrollador.jpg" alt="Foto del desarrollador">
-         
-        <div class="bio">
-            <h2>Lorem ipsum.</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Repellat exercitationem quas quisquam quibusdam quod voluptatum rerum ea eligendi deleniti voluptatibus ad maxime, iusto consequatur, natus dignissimos laborum itaque error blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facilis dolor dolore assumenda nulla. <br> Voluptate, reprehenderit esse repudiandae illum magnam aspernatur sequi perferendis autem veritatis nobis consequatur, porro architecto illo.</h3>
         </div>
-
-    </div>
+      </nav>
+    </header>
+    <main>
+      <h1>sobre nosotros</h1>
     </main>
-    
-    
-  
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-<footer>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit </p>
-  </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

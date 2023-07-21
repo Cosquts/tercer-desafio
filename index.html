@@ -15,94 +15,73 @@
   <body>
     <header>
       <nav class="barra-nav navbar fixed-top p-0">
-        <div
-          class="barra-nav__container container-fluid justify-content-around d-flex"
-        >
+        <div class="barra-nav__container container-fluid justify-content-around d-flex">
           <nav class="barra-nav__left nav d-none d-md-flex">
-            <a class="barra-nav__left-link nav-link" href="pages/contacto.html"
-              >Contacto</a
-            >
-            <a class="barra-nav__left-link nav-link" href="#">Sobre nosotros</a>
+            <a class="barra-nav__left-link nav-link" href="pages/contacto.html">Contacto</a>
+            <a class="barra-nav__left-link nav-link" href="/pages/sobrenosotros.html">Sobre nosotros</a>
           </nav>
-
-          <a class="barra-nav__logo navbar-brand" href="#"
-            ><img
+          <a class="barra-nav__logo navbar-brand" href="index.html">
+            <img
               class="barra-nav__logo-img"
               src="img/logo header turnolink.png"
-              alt="logo de la app"
-          /></a>
-
+              alt="Imagen usada para el boton que lleva al inicio de la página"/>
+            </a>
           <nav class="barra-nav__right nav d-none d-md-flex">
-            <a class="barra-nav__right-link nav-link" href="#">Inicia sesión</a>
-            <a class="barra-nav__right-link-sign nav-link" href="#"
-              >Registrate</a
-            >
+            <a class="barra-nav__right-link nav-link" href="pages/login.html">Inicia sesión</a>
+            <a class="barra-nav__right-link-sign nav-link" href="pages/signup.html">Registrate</a>
           </nav>
-
           <button
             class="barra-nav__button navbar-toggler d-md-none"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="barra-nav__menu offcanvas offcanvas-end"
+          <div class="barra-nav__menu offcanvas offcanvas-end"
             tabindex="-1"
             id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-           >
+            aria-labelledby="offcanvasNavbarLabel">
             <div class="barra-nav__menu-header offcanvas-header">
-              <a class="barra-nav__menu-header-a navbar-brand" href="#"
-                ><img
-                  class="barra-nav__menu-header-img img-logo"
-                  src="img/logo completo byn.png"
-                  alt="logo de la app que lleva al home"
-              /></a>
-
+              <a class="barra-nav__menu-header-a navbar-brand" href="index.html">
+                <img class="barra-nav__menu-header-img img-logo"src="img/logo completo byn.png"alt="logo de la app que lleva al home"/>
+               </a>
               <button
                 type="button"
                 class="barra-nav__menu-header-button btn-close fs-1"
                 data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+                aria-label="Close"></button>
             </div>
             <div class="barra-nav__menu-main offcanvas-body">
-              <ul class="barra-nav__menu-main-ul navbar-nav justify-content-end flex-grow-1 pe-3">
-                
+              <ul
+                class="barra-nav__menu-main-ul navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="barra-nav__menu-main-li nav-item">
-                  <a class="barra-nav__menu-main-a nav-link  fs-2" aria-current="page" href="#"
-                    >Mi cuenta</a
-                  >
+                  <a
+                    class="barra-nav__menu-main-a nav-link fs-2"
+                    aria-current="page"
+                    href="#">Mi cuenta</a>
                 </li>
                 <li class="barra-nav__menu-main-li nav-item">
-                  <a class="barra-nav__menu-main-a nav-link  fs-2" aria-current="page" href="#"
-                    >Iniciar Sesión</a
-                  >
+                  <a class="barra-nav__menu-main-a nav-link fs-2"
+                    aria-current="page"
+                    href="pages/login.html">Iniciar Sesión</a>
                 </li>
                 <li class="nav-item">
-                  <a class="barra-nav__menu-main-a nav-link  fs-2" href="#">Registrarse</a>
+                  <a class="barra-nav__menu-main-a nav-link fs-2" href="pages/signup.html">Registrarse</a>
                 </li>
                 <li class="barra-nav__menu-main-dropdown nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
+                  <a class="nav-link dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Autor
+                    aria-expanded="false">Autor
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Contacto</a></li>
+                    <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Sobre nosotros</a>
+                      <a class="dropdown-item" href="pages/sobrenosotros.html">Sobre nosotros</a>
                     </li>
-                   
-                  
                   </ul>
                 </li>
               </ul>

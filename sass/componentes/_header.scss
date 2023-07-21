@@ -1,15 +1,16 @@
 @import "../base/variables";
 @import "../base/mixin";
-
+//  Estilos del nav
 .barra-nav {
   &__container {
-    background-color: $color-principal;
-  }
-
+     background-color: $color-principal;
+    }
   &__left {
+
     &-link {
       @include nav-a;
       &:hover {
+        transition: all 0.5 ease;
         color: $color-secundario;
         text-shadow: 0px 0px 2px rgb(5, 5, 5);
       }
@@ -26,7 +27,6 @@
   &__logo {
     &-img {
       @include logo;
-
       &:active {
         outline: 1.5px solid rgba(42, 44, 52, 0.09);
         transform: scale(0.98);
@@ -34,7 +34,6 @@
       }
     }
   }
-
   &__right {
     &-link {
       @include nav-a;
@@ -61,5 +60,4 @@
       }
     }
   }
- 
 }
