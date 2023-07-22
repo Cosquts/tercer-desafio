@@ -190,11 +190,21 @@ body main {
   font-weight: bold;
   margin-bottom: 30px;
 }
-.form-container .form .form-container .form__social-text {
-  text-align: center;
+.form-container .form__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.form-container .form__social-icons {
-  color: wheat;
+.form-container .form__social-icon {
+  margin: 10px;
+}
+.form-container .form__social-icon-img {
+  width: 30px;
+}
+.form-container .form__signup {
+  text-align: center;
+  margin: 10px;
 }
 
 .form-container .form {

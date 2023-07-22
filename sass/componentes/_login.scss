@@ -57,13 +57,21 @@
         margin-bottom: 30px;
     }
 
-    &
-    &__social-text {
-        text-align: center;
+   &__social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-icon{
+      margin: 10px;
+      &-img{
+        width: 30px;
+      }
     }
-
-    &__social-icons{
-        color: wheat;
-    }
+   }
+   &__signup{
+      text-align: center;
+      margin: 10px;
+   }
   }
 }
