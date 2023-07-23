@@ -1,13 +1,8 @@
 @import "../base/variables";
 @import "../base/extend";
 
-body {
+main {
+  background-image: linear-gradient($color-claro, $color-secundario);
+  height: 100vh;
   
-  main {
-    background-image: linear-gradient($color-claro,$color-secundario);
-   height: 100vh;
-    
-    
-
-  }
 }
