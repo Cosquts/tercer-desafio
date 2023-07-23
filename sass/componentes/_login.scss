@@ -1,25 +1,17 @@
 @import "../base/variables";
 
 .form-container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ @extend %form-container;
   
- 
-
   .form {
     @extend %card-user;
     background-color: $bg-login;
     display: flex;
     flex-direction: column;
+    border: 1px solid rgba(3, 104, 3, 0.952);
     
     &__tittle {
-      color: black;
-      text-align: center;
-      font-weight: bold;
-      text-decoration: underline;
-      margin-bottom: 20px;
+      @extend %form-tittle; 
     }
 
     &__date {

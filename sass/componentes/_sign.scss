@@ -1,0 +1,21 @@
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+.form-sign-container{
+    @extend %form-container;
+
+    .form-sign{
+        @extend %card-user;
+        background-color: rgba(255, 0, 0, 0.226);
+       text-align: center;
+        &__tittle{
+          @extend %form-tittle;  
+        }
+        &__date{
+            margin-bottom: 15px; 
+        }
+    }
+
+
+}
