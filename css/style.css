@@ -152,6 +152,27 @@ main {
   }
 }
 
+.home {
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: black;
+}
+.home__welcome {
+  background-color: whitesmoke;
+  padding: 10%;
+  text-shadow: 5px 3px 5px black;
+}
+.home__welcome-h2 {
+  margin: 0;
+}
+.home__welcome-h3 {
+  margin: 0;
+}
+.home__images-img {
+  width: 100px;
+}
+
 .form-container, .form-sign-container {
   height: 100%;
   display: flex;
@@ -432,7 +453,7 @@ main {
     grid-template-columns: 1fr 1fr;
   }
   main div.form-sign-container .form-sign {
-    padding: 20% 5%;
+    padding: 25% 5%;
     justify-content: space-between;
   }
   main div.form-sign-container .form-sign__date-img {
@@ -476,20 +497,20 @@ main {
   }
 }
 @media (min-width: 768px) {
-  main .form-container, main .form-sign-container {
+  main div.form-container, main div.form-sign-container {
     margin: 0 10px;
     padding: 2% 10%;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.5fr 1fr !important;
   }
-  main .form-container .form, main .form-sign-container .form {
+  main div.form-container .form, main div.form-sign-container .form {
     padding: 20% 5%;
     width: 100%;
     height: 100%;
     border-radius: 5px 0 0 5px;
     margin: 0;
   }
-  main .form-container .form__signup, main .form-sign-container .form__signup, .form-sign-container main .form-container .form-sign__login, main .form-sign-container .form-sign__login {
+  main div.form-container .form__signup, main div.form-sign-container .form__signup, main div.form-container .form-sign-container .form-sign__login, .form-sign-container main div.form-container .form-sign__login, main div.form-sign-container .form-sign__login {
     display: none;
   }
   .login-img {

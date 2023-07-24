@@ -7,11 +7,11 @@
 }
 
 @media (min-width:768px) {
-    main .form-container{
+    main div.form-container{
         margin: 0 10px;
         padding: 2% 10%;
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr !important;
         
         .form{
             padding: 20% 5%;
@@ -29,7 +29,6 @@
        width: 100%;
        height: 100%;
        border-radius: 0 5px 5px 0;
-     //   border: 1px 1px solid $color-principal;
        box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.50);
        background-image: url("../../img/celular.png");
         background-position: center;
