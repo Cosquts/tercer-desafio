@@ -1,0 +1,13 @@
+@import "../base/mixin";
+@import "../base/variables";
+
+.nosotros{
+    text-align: center;
+    padding: 5%;
+    background-image: linear-gradient(white , $color-principal);
+    &__img{
+        width: 80%;
+        margin: 10%;
+        @include shadow;
+    }
+}

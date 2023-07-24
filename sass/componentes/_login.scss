@@ -11,11 +11,13 @@
     background-color: whitesmoke;
     
     &__tittle {
-      color: black;
+      color: $color-secundario;
       text-align: center;
       font-weight: bold;
-      text-decoration: underline;
       margin-bottom: 20px; 
+      box-shadow: 1px 23px 15px 1px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      padding: 10px;
     }
 
     &__date {

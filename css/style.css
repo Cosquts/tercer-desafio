@@ -248,6 +248,17 @@ main {
   padding: 5%;
 }
 
+.nosotros {
+  text-align: center;
+  padding: 5%;
+  background-image: linear-gradient(white, #e7ab30);
+}
+.nosotros__img {
+  width: 80%;
+  margin: 10%;
+  box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.35);
+}
+
 .form-container, .form-sign-container {
   height: 100%;
   display: flex;
@@ -258,11 +269,13 @@ main {
   background-color: whitesmoke;
 }
 .form-container .form__tittle, .form-sign-container .form__tittle, .form-sign-container .form-sign__tittle {
-  color: black;
+  color: #2A2C34;
   text-align: center;
   font-weight: bold;
-  text-decoration: underline;
   margin-bottom: 20px;
+  box-shadow: 1px 23px 15px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
 }
 .form-container .form__date, .form-sign-container .form__date {
   margin-bottom: 15px;
