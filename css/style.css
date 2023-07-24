@@ -373,20 +373,20 @@ main {
   }
 }
 @media (min-width: 768px) {
-  main .form-sign-container {
+  main div.form-sign-container {
     margin: 0 10px;
     padding: 2% 10%;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
-  main .form-sign-container .form-sign {
+  main div.form-sign-container .form-sign {
     padding: 5% 5%;
     width: 100%;
     height: 100%;
     border-radius: 5px 0 0 5px;
     margin: 0;
   }
-  main .form-sign-container .sign-img {
+  main div.form-sign-container .sign-img {
     display: flex;
     width: 100%;
     height: 100%;
@@ -399,7 +399,7 @@ main {
     justify-content: start;
     animation: card 1s ease-in;
   }
-  main .form-sign-container .sign-img__login {
+  main div.form-sign-container .sign-img__login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -407,46 +407,50 @@ main {
     gap: 10px;
     margin-top: 40px;
   }
-  main .form-sign-container .sign-img__login-text, main .form-sign-container .sign-img__login-link {
+  main div.form-sign-container .sign-img__login-text, main div.form-sign-container .sign-img__login-link {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     padding: 5px;
     margin: 0;
     color: white;
   }
-  main .form-sign-container .sign-img__login-link {
+  main div.form-sign-container .sign-img__login-link {
     color: green;
   }
-  main .form-sign-container .sign-img__h2, main .form-sign-container .sign-img__p {
+  main div.form-sign-container .sign-img__h2, main div.form-sign-container .sign-img__p {
     margin: 7% 0;
     color: whitesmoke;
     text-align: center;
   }
 }
 @media (min-width: 1024px) {
-  .form-sign-container {
+  main div.form-sign-container {
     padding: 2% 10%;
     height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  .form-sign-container .form-sign {
+  main div.form-sign-container .form-sign {
+    padding: 20% 5%;
     justify-content: space-between;
   }
-  .form-sign-container .form-sign__date-img {
+  main div.form-sign-container .form-sign__date-img {
     width: 40px;
   }
-  .form-sign-container .form-sign__additional-remember {
+  main div.form-sign-container .form-sign__additional-remember {
     display: flex;
     justify-content: center;
     gap: 15px;
     font-size: 20px;
   }
-  .form-sign-container .form-sign__additional-remember-check {
+  main div.form-sign-container .form-sign__additional-remember-check {
     scale: 2;
   }
-  .form-sign-container .form-sign hr {
+  main div.form-sign-container .form-sign hr {
     display: none;
   }
-  .form-sign-container .form-sign__login {
+  main div.form-sign-container .form-sign__login {
     display: none;
   }
 }
