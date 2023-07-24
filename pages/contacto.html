@@ -90,30 +90,74 @@
       </nav>
     </header>
     <main>
-      <h1>contacto</h1>
-      <footer class="footer-container">  
-        <div class="footer-container__footer-section">
-          <h3>Enlaces:</h3>
-          <ul class="footer-container__footer-section-links">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="sobrenosotros.html">Sobre de nosotros</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="login.html">Iniciar sesión</a></li>
-              <li><a href="signup.html">Registrarse</a></li>
-          </ul>
-      </div>
-      <div class="footer-container__social">
-        <a class="footer-container__social-icons" href="#">
-          <img class="footer-container__social-icons-img" src="../img/google-logo-24.png" alt="Google"></a>
-          <a class="footer-container__social-icons" href="#">
-            <img class="footer-container__social-icons-img" src="../img/facebook-square-logo-24.png" alt="Facebook"></a>
-            <a class="footer-container__social-icons" href="#">
-              <img class="footer-container__social-icons-img" src="../img/twitter-logo-24.png"  alt="Twitter">
-            </a>
+      <div class="contact-container">
+        <div class="contact">
+          <h1 class="contact__title">contacto</h1>
+          <hr>
+          <div class="contact__medios">
+            <div class="contact__medios-div">
+              <img src="../img/whatsapp-logo-24.png" alt="Icono de Whatsapp">
+              <p>Whatsapp:</p>
+              <p>+541154150124</p>
+            </div>
+            <div class="contact__medios-div">
+              <img src="../img/map-solid-24.png" alt="Icono de maps">
+              <p>Dirección</p>
+              <p>Calle falsa:1234</p>
+            </div>
+            <div class="contact__medios-div">
+              <img src="../img/email.png" alt="Icono de correo">
+              <p>Correo:</p>
+              <p>correoelectrónico@gmail.com</p>
+            </div>
           </div>
-          <p>2023 TurnoLink. Todos los derechos reservados.</p>
-    </footer> 
+          <hr>
+          <h2 class="contact__medios-h2">
+            Puedes contactarnos directamentes por los medios anteriores o dejarnos un mensaje con tus datos por aquí:
+          </h2>
+          <form class="contact__form">
+            <label>
+              <input type="text" name="Nombre" placeholder="Nombre">
+              <input type="text" name="Apellido" placeholder="Apellido">
+            </label>
+            <label>
+              <input type="email" name="correoelectrónico" placeholder="Correo electrónico">
+            </label>
+            <textarea name="mensaje" cols="30" rows="5" placeholder="Tu mensaje"></textarea>
+          </form>
+          <hr>
+          <h3>Tambien puedes visitar nuestras redes sociales:</h3>
+          <section class="contact__social">
+            <a href="#"><img src="../img/twitter-logo-24.png" alt="Logo de Twitter"></a>
+            <a href="#"><img src="../img/facebook-square-logo-24.png" alt="Logo de Facebook"></a>
+            <a href="#"><img src="../img/instagram-logo-24.png" alt="Logo de Instagram"></a>
+            <a href="#"><img src="../img/linkedin-square-logo-24.png" alt="Logo de Linkedin"></a>
+          </section>
+        </div>
+      </div>
     </main>
+    <footer class="footer-container">  
+      <div class="footer-container__footer-section">
+        <h3>Enlaces:</h3>
+        <ul class="footer-container__footer-section-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="sobrenosotros.html">Sobre de nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+            <li><a href="signup.html">Registrarse</a></li>
+        </ul>
+    </div>
+    <div class="footer-container__social">
+      <a class="footer-container__social-icons" href="#">
+        <img class="footer-container__social-icons-img" src="../img/google-logo-24.png" alt="Google"></a>
+        <a class="footer-container__social-icons" href="#">
+          <img class="footer-container__social-icons-img" src="../img/facebook-square-logo-24.png" alt="Facebook"></a>
+          <a class="footer-container__social-icons" href="#">
+            <img class="footer-container__social-icons-img" src="../img/twitter-logo-24.png"  alt="Twitter">
+          </a>
+        </div>
+        <p>2023 TurnoLink. Todos los derechos reservados.</p>
+  </footer> 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
