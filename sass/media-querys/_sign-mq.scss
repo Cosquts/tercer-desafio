@@ -1,4 +1,4 @@
-
+@import "../base/variables";
 @import "../base/extend";
 
 @media (max-width:420px) {
@@ -10,7 +10,7 @@
 @media (min-width:768px) {
   .form-container{
    margin: 0 10px;
-   padding: 10%;
+   padding: 2% 10%;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
       .form-sign{
@@ -19,13 +19,14 @@
          height: 100%;
          border-radius: 5px 0 0 5px;
          margin: 0;
+      
       }
       .sign-img{
          display: flex;
         width: 100%;
-        border: 1px solid white;
         height: 100%;
         border-radius: 0 5px 5px 0;
+      //   border: 1px 1px solid $color-principal;
         box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.50);
         background-image: url("../../img/celular.png");
          background-position: center;
@@ -33,42 +34,59 @@
          flex-direction: column;
          justify-content: start;
          animation: card 1s ease-in;
-        
-         h2, p{
-            margin: 10% 0;
+         &__login{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 40px;
+            &-text{
+               background-color: rgba(0, 0, 0, 0.4);
+               border-radius: 5px;
+               padding: 5px;
+               margin: 0;
+               color: white;
+            }
+            &-link{
+               @extend .sign-img__login-text;
+               color: green;
+            }
+         }
+         &__h2, &__p {
+          margin: 7% 0;
             color: whitesmoke;
             text-align: center;
          }
-      } 
+         }
+        
       
   }
 }
 
 @media (min-width:1024px) {
-   .form-container{padding: 2%;
-      height: 100vh;
+   .form-container{
+      padding: 2% 10%;
+      height: 100%;
       .form-sign{
 justify-content: space-between;
+
             &__date{
                   &-img{
                      width: 40px;
                   }
-                  &-input{
-                      height: 50px;
-                      width: 600px;
-           }
+                 
          }
          &__additional-remember{
-            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 20px;
             &-check{
                scale: 2;
             }
          }
-         &__submit{
-            height: 50px;
-            
-            
-         }
+        
          hr{
             display: none;
          }

@@ -4,33 +4,30 @@
 
 .form-sign-container {
   @extend .form-container;
-//   padding-bottom: 30%;
+  //   padding-bottom: 30%;
 
   .form-sign {
     @extend %card-user;
-    background-color: rgba(255, 0, 0, 0.226);
-    border: 1px solid rgb(106, 1, 1);
-    animation: sign-card 1s ease ;
-   
+    // background-color: rgba(255, 0, 0, 0.226);
+    background-color: whitesmoke;
+    // border: 1px solid $color-principal;
+    animation: sign-card 1s ease;
+
     &__tittle {
       @extend .form__tittle;
     }
     &__section {
-     text-align: center; 
+      text-align: center;
     }
-   
+
     &__date {
       margin: 10px;
 
-    
       input {
-        border: 0;
-        border-radius: 5px;
+        @extend .form__date-input;
       }
-
-      
     }
-    &__additional-remember{
+    &__additional-remember {
       display: flex;
       width: 100%;
       justify-content: space-evenly;
@@ -38,49 +35,41 @@
       flex-direction: row-reverse;
       margin: 10px 0;
 
-      &-text{
-          margin: 0;
+      &-text {
+        margin: 0;
       }
     }
-    &__submit{
-      background-color: rgba(255, 0, 0, 0.226);
-      border: 1px solid rgb(106, 1, 1);
-      border-radius: 3px;
-    //   font-weight: bold;
-      color: black;
+    &__submit {
+      @extend .form__submit;
     }
-    &__login{
-        @extend .form__signup;
-        &-text{
-            @extend .form__signup-text;
-        }
-        &-link{
-            color: green;
-            font-size: 20px;
-            text-decoration: none;
-        }
+    &__login {
+      @extend .form__signup;
+      &-text {
+        @extend .form__signup-text;
+      }
+      &-link {
+        color: green;
+        font-size: 20px;
+        text-decoration: none;
+      }
     }
- 
-   
   }
-  .sign-img{
+  .sign-img {
     display: none;
- } 
+  }
 }
 
 @keyframes card {
-    0%{
-        opacity: 0%;
-        scale: 0;
-    }
+  0% {
+    opacity: 0%;
+    scale: 0;
+  }
 
-    50%{
-        opacity: 50%;
-    }
+  50% {
+    opacity: 50%;
+  }
 
-    100%{
-        opacity: 100%;
-    }
+  100% {
+    opacity: 100%;
+  }
 }
-
-
