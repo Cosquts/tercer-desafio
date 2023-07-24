@@ -3,15 +3,16 @@
 @import "../base/variables";
 
 .form-sign-container {
-  @extend %form-container;
-  padding: 10%;
+  @extend .form-container;
+  padding: 0 15%;
 
   .form-sign {
     @extend %card-user;
     background-color: rgba(255, 0, 0, 0.226);
-
+    border: 1px solid rgb(106, 1, 1);
+    padding: 20% 6%;
     &__tittle {
-      @extend %form-tittle;
+      @extend .form__tittle;
     }
     &__section {
      text-align: center; 
@@ -21,24 +22,55 @@
       margin: 10px;
 
       &--name {
-        margin: 10px;
+       
      
         input {
             border-radius: 5px;
             border: 0;
-            margin-bottom: 5px;
+            
         }
-        input:nth-child(3){
-            margin-left: 27px;
-        }
+        // input:nth-child(3){
+        //     margin-left: 27px;
+        // }
       }
       input {
         border: 0;
         border-radius: 5px;
       }
-   
-   
+
+      
     }
+    &__additional-remember{
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin: 10px 0;
+
+      &-text{
+          margin: 0;
+      }
+    }
+    &__submit{
+      background-color: rgba(255, 0, 0, 0.226);
+      border: 1px solid rgb(106, 1, 1);
+      border-radius: 3px;
+    //   font-weight: bold;
+      color: black;
+    }
+    &__login{
+        @extend .form__signup;
+        &-text{
+            @extend .form__signup-text;
+        }
+        &-link{
+            color: green;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+ 
    
   }
 }

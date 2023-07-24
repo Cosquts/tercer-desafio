@@ -127,27 +127,12 @@ header {
   color: antiquewhite;
 }
 
-.form-sign-container .form-sign, .form-container .form {
-  padding: 6%;
+.form-sign-container .form-sign, .form-container .form, .form-sign-container .form {
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
-}
-
-.form-sign-container, .form-container {
-  height: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.form-sign-container .form-sign__tittle, .form-container .form__tittle {
-  color: black;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: underline;
-  margin-bottom: 20px;
 }
 
 main {
@@ -155,88 +140,97 @@ main {
   height: 100vh;
 }
 
-.form-container .form {
-  background-color: rgba(12, 255, 12, 0.253);
-  border: 1px solid rgba(3, 104, 3, 0.952);
-}
-.form-container .form__date {
-  margin-bottom: 15px;
-}
-.form-container .form__date:nth-child(2) {
-  margin-bottom: 9px;
-}
-.form-container .form__date-input {
-  border-radius: 5px;
-  border: 0;
-}
-.form-container .form__additional-remember {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 17px;
-}
-.form-container .form__additional-remember-text {
-  margin: 0;
-}
-.form-container .form__additional-link {
-  color: rgba(255, 0, 0, 0.9);
-  text-align: center;
-  text-decoration: none;
-  font-size: 15px;
-}
-.form-container .form__submit {
-  background-color: rgba(12, 255, 12, 0.253);
-  border-radius: 3px;
-  border: 1px solid rgb(4, 102, 4);
-  color: rgb(4, 102, 4);
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-.form-container .form__social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.form-container .form__social-icon {
-  margin: 10px;
-}
-.form-container .form__social-icon-img {
-  width: 30px;
-}
-.form-container .form__signup {
-  text-align: center;
-  margin: 10px;
-}
-
-.form-sign-container .form-sign, .form-container .form {
-  padding: 6%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
-  display: flex;
-  flex-direction: column;
-}
-
-.form-sign-container, .form-container {
+.form-container, .form-sign-container {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.form-sign-container .form-sign__tittle, .form-container .form__tittle {
+.form-container .form, .form-sign-container .form {
+  padding: 15% 6%;
+  background-color: rgba(12, 255, 12, 0.253);
+  border: 1px solid rgba(3, 104, 3, 0.952);
+}
+.form-container .form__tittle, .form-sign-container .form__tittle, .form-sign-container .form-sign__tittle {
   color: black;
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
   margin-bottom: 20px;
 }
+.form-container .form__date, .form-sign-container .form__date {
+  margin-bottom: 15px;
+}
+.form-container .form__date:nth-child(2), .form-sign-container .form__date:nth-child(2) {
+  margin-bottom: 9px;
+}
+.form-container .form__date-input, .form-sign-container .form__date-input {
+  border-radius: 5px;
+  border: 0;
+}
+.form-container .form__additional-remember, .form-sign-container .form__additional-remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 17px;
+}
+.form-container .form__additional-remember-text, .form-sign-container .form__additional-remember-text {
+  margin: 0;
+}
+.form-container .form__additional-link, .form-sign-container .form__additional-link {
+  color: rgba(255, 0, 0, 0.9);
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+.form-container .form__submit, .form-sign-container .form__submit {
+  background-color: rgba(12, 255, 12, 0.253);
+  border-radius: 3px;
+  border: 1px solid rgb(4, 102, 4);
+  color: black;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.form-container .form__social, .form-sign-container .form__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container .form__social-icon, .form-sign-container .form__social-icon {
+  margin: 10px;
+}
+.form-container .form__social-icon-img, .form-sign-container .form__social-icon-img {
+  width: 30px;
+}
+.form-container .form__signup, .form-sign-container .form__signup, .form-sign-container .form-sign__login {
+  text-align: center;
+  margin: 10px;
+}
+.form-container .form__signup-text, .form-sign-container .form__signup-text, .form-sign-container .form-sign__login-text {
+  margin: 0;
+}
+.form-container .form__signup-link, .form-sign-container .form__signup-link {
+  color: red;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.form-sign-container .form-sign, .form-container .form, .form-sign-container .form {
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .form-sign-container {
-  padding: 10%;
+  padding: 0 15%;
 }
 .form-sign-container .form-sign {
   background-color: rgba(255, 0, 0, 0.226);
+  border: 1px solid rgb(106, 1, 1);
+  padding: 20% 6%;
 }
 .form-sign-container .form-sign__section {
   text-align: center;
@@ -244,66 +238,51 @@ main {
 .form-sign-container .form-sign__date {
   margin: 10px;
 }
-.form-sign-container .form-sign__date--name {
-  margin: 10px;
-}
 .form-sign-container .form-sign__date--name input {
   border-radius: 5px;
   border: 0;
-  margin-bottom: 5px;
-}
-.form-sign-container .form-sign__date--name input:nth-child(3) {
-  margin-left: 27px;
 }
 .form-sign-container .form-sign__date input {
   border: 0;
   border-radius: 5px;
 }
+.form-sign-container .form-sign__additional-remember {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 10px 0;
+}
+.form-sign-container .form-sign__additional-remember-text {
+  margin: 0;
+}
+.form-sign-container .form-sign__submit {
+  background-color: rgba(255, 0, 0, 0.226);
+  border: 1px solid rgb(106, 1, 1);
+  border-radius: 3px;
+  color: black;
+}
+.form-sign-container .form-sign__login-link {
+  color: green;
+  font-size: 20px;
+  text-decoration: none;
+}
 
-.form-container .form, .form-sign-container .form-sign {
-  padding: 6%;
+.form-container .form, .form-sign-container .form, .form-sign-container .form-sign {
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
-}
-
-.form-container, .form-sign-container {
-  height: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.form-container .form__tittle, .form-sign-container .form-sign__tittle {
-  color: black;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: underline;
-  margin-bottom: 20px;
-}
-
-.form-container .form, .form-sign-container .form-sign {
-  padding: 6%;
+.form-container .form, .form-sign-container .form, .form-sign-container .form-sign {
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
-}
-
-.form-container, .form-sign-container {
-  height: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.form-container .form__tittle, .form-sign-container .form-sign__tittle {
-  color: black;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: underline;
-  margin-bottom: 20px;
 }
 
 .footer-container {
