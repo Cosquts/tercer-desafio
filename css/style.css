@@ -161,16 +161,23 @@ main {
 .home__welcome {
   background-color: whitesmoke;
   padding: 10%;
-  text-shadow: 5px 3px 5px black;
+}
+.home__welcome-title {
+  color: black;
+  margin-bottom: 10%;
+}
+.home__welcome-title strong {
+  font-size: 40px;
 }
 .home__welcome-h2 {
-  margin: 0;
+  margin-bottom: 5%;
 }
 .home__welcome-h3 {
-  margin: 0;
+  margin-bottom: 5%;
 }
 .home__images-img {
   width: 100px;
+  margin: 5%;
 }
 
 .form-container, .form-sign-container {

@@ -10,17 +10,27 @@
     &__welcome{
         background-color: whitesmoke;
         padding: 10%;
-        text-shadow: 5px 3px 5px  black;
+        // text-shadow: 5px 3px 5px  black;
+       &-title{
+        color: black;
+        margin-bottom: 10%;
+        strong{
+            font-size: 40px;
+        }
+       }
         &-h2{
-            margin: 0;
+            margin-bottom: 5%;
         }
         &-h3{
-            margin: 0;
-            
+            margin-bottom: 5%;
         }
 
     }
-    &__images-img{
+    &__images{
+    //    margin: 5%;
+       &-img{
         width: 100px;
+        margin: 5%;
+       }
     }
 }
