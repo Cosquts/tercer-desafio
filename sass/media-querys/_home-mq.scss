@@ -12,6 +12,19 @@
             width: 200px;
         }
     }
-
-   
 }
+    @media (min-width:1300px) {
+        .home{
+            .home__welcome{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                background-color: tomato;
+                grid-column: 1/2 ;
+                .home__images{
+                    background-color: red;
+                    grid-column: 2/3 ;
+                    grid-row: 1/4;
+                }
+            }
+        }
+    }
