@@ -2,20 +2,43 @@
 @import "../base/mixin";
 @import "../base/variables";
 
-.form-sign-container{
-    @extend %form-container;
+.form-sign-container {
+  @extend %form-container;
+  padding: 10%;
 
-    .form-sign{
-        @extend %card-user;
-        background-color: rgba(255, 0, 0, 0.226);
-       text-align: center;
-        &__tittle{
-          @extend %form-tittle;  
-        }
-        &__date{
-            margin-bottom: 15px; 
-        }
+  .form-sign {
+    @extend %card-user;
+    background-color: rgba(255, 0, 0, 0.226);
+
+    &__tittle {
+      @extend %form-tittle;
     }
+    &__section {
+     text-align: center; 
+    }
+   
+    &__date {
+      margin: 10px;
 
-
+      &--name {
+        margin: 10px;
+     
+        input {
+            border-radius: 5px;
+            border: 0;
+            margin-bottom: 5px;
+        }
+        input:nth-child(3){
+            margin-left: 27px;
+        }
+      }
+      input {
+        border: 0;
+        border-radius: 5px;
+      }
+   
+   
+    }
+   
+  }
 }

@@ -131,6 +131,8 @@ header {
   padding: 6%;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 .form-sign-container, .form-container {
@@ -155,8 +157,6 @@ main {
 
 .form-container .form {
   background-color: rgba(12, 255, 12, 0.253);
-  display: flex;
-  flex-direction: column;
   border: 1px solid rgba(3, 104, 3, 0.952);
 }
 .form-container .form__date {
@@ -213,6 +213,8 @@ main {
   padding: 6%;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 .form-sign-container, .form-container {
@@ -230,18 +232,40 @@ main {
   margin-bottom: 20px;
 }
 
+.form-sign-container {
+  padding: 10%;
+}
 .form-sign-container .form-sign {
   background-color: rgba(255, 0, 0, 0.226);
+}
+.form-sign-container .form-sign__section {
   text-align: center;
 }
 .form-sign-container .form-sign__date {
-  margin-bottom: 15px;
+  margin: 10px;
+}
+.form-sign-container .form-sign__date--name {
+  margin: 10px;
+}
+.form-sign-container .form-sign__date--name input {
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 5px;
+}
+.form-sign-container .form-sign__date--name input:nth-child(3) {
+  margin-left: 27px;
+}
+.form-sign-container .form-sign__date input {
+  border: 0;
+  border-radius: 5px;
 }
 
 .form-container .form, .form-sign-container .form-sign {
   padding: 6%;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 .form-container, .form-sign-container {
@@ -263,6 +287,8 @@ main {
   padding: 6%;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 .form-container, .form-sign-container {
