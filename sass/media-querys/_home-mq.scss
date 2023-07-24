@@ -1,0 +1,17 @@
+@import "../base/mixin";
+
+@media (min-width:768px){
+    .home{
+        background-color: tomato !important;
+    //    padding: 5%;
+        &__welcome{
+           padding: 3%;
+           
+        }
+        &__images-img{
+            width: 200px;
+        }
+    }
+
+   
+}

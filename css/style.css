@@ -153,8 +153,6 @@ main {
 }
 
 .home {
-  background-position: center;
-  background-size: cover;
   text-align: center;
   color: black;
 }
@@ -180,6 +178,17 @@ main {
   margin: 5%;
 }
 
+@media (min-width: 768px) {
+  .home {
+    background-color: tomato !important;
+  }
+  .home__welcome {
+    padding: 3%;
+  }
+  .home__images-img {
+    width: 200px;
+  }
+}
 .contact-container {
   background-color: whitesmoke;
 }
