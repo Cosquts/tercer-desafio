@@ -128,16 +128,28 @@ header {
 }
 
 .form-sign-container .form-sign, .form-container .form, .form-sign-container .form {
+  margin: 50px 0;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20% 6%;
+  animation: card 1s ease-in;
+}
+@media (max-width: 420px) {
+  .form-sign-container .form-sign, .form-container .form, .form-sign-container .form {
+    margin: 15% 0;
+  }
 }
 
 main {
   background-image: linear-gradient(antiquewhite, #2A2C34);
-  height: 100vh;
+}
+@media (max-width: 420px) {
+  main {
+    height: auto;
+  }
 }
 
 .form-container, .form-sign-container {
@@ -147,7 +159,6 @@ main {
   align-items: center;
 }
 .form-container .form, .form-sign-container .form {
-  padding: 15% 6%;
   background-color: rgba(12, 255, 12, 0.253);
   border: 1px solid rgba(3, 104, 3, 0.952);
 }
@@ -217,30 +228,31 @@ main {
 }
 
 .form-sign-container .form-sign, .form-container .form, .form-sign-container .form {
+  margin: 50px 0;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20% 6%;
+  animation: card 1s ease-in;
+}
+@media (max-width: 420px) {
+  .form-sign-container .form-sign, .form-container .form, .form-sign-container .form {
+    margin: 15% 0;
+  }
 }
 
-.form-sign-container {
-  padding: 0 15%;
-}
 .form-sign-container .form-sign {
   background-color: rgba(255, 0, 0, 0.226);
   border: 1px solid rgb(106, 1, 1);
-  padding: 20% 6%;
+  animation: sign-card 1s ease;
 }
 .form-sign-container .form-sign__section {
   text-align: center;
 }
 .form-sign-container .form-sign__date {
   margin: 10px;
-}
-.form-sign-container .form-sign__date--name input {
-  border-radius: 5px;
-  border: 0;
 }
 .form-sign-container .form-sign__date input {
   border: 0;
@@ -268,21 +280,52 @@ main {
   font-size: 20px;
   text-decoration: none;
 }
+.form-sign-container .sign-img {
+  display: none;
+}
 
+@keyframes card {
+  0% {
+    opacity: 0%;
+    scale: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .form-container .form, .form-sign-container .form, .form-sign-container .form-sign {
+  margin: 50px 0;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20% 6%;
+  animation: card 1s ease-in;
+}
+@media (max-width: 420px) {
+  .form-container .form, .form-sign-container .form, .form-sign-container .form-sign {
+    margin: 15% 0;
+  }
 }
 
 .form-container .form, .form-sign-container .form, .form-sign-container .form-sign {
+  margin: 50px 0;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20% 6%;
+  animation: card 1s ease-in;
+}
+@media (max-width: 420px) {
+  .form-container .form, .form-sign-container .form, .form-sign-container .form-sign {
+    margin: 15% 0;
+  }
 }
 
 .footer-container {
@@ -312,6 +355,93 @@ main {
   margin: 0;
   text-align: center;
   padding-bottom: 5px;
+}
+
+.form-container .form, .form-sign-container .form, .form-sign-container .form-sign {
+  margin: 50px 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20% 6%;
+  animation: card 1s ease-in;
+}
+@media (max-width: 420px) {
+  .form-container .form, .form-sign-container .form, .form-sign-container .form-sign {
+    margin: 15% 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .form-sign__date-img {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .form-container, .form-sign-container {
+    margin: 0 10px;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-container .form-sign, .form-sign-container .form-sign {
+    padding: 5% 5%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    margin: 0;
+  }
+  .form-container .sign-img, .form-sign-container .sign-img {
+    display: flex;
+    width: 100%;
+    border: 1px solid white;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
+    background-image: url("../../img/celular.png");
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: start;
+    animation: card 1s ease-in;
+  }
+  .form-container .sign-img h2, .form-sign-container .sign-img h2, .form-container .sign-img p, .form-sign-container .sign-img p {
+    margin: 10% 0;
+    color: whitesmoke;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .form-container, .form-sign-container {
+    padding: 2%;
+    height: 100vh;
+  }
+  .form-container .form-sign, .form-sign-container .form-sign {
+    justify-content: space-between;
+  }
+  .form-container .form-sign__date-img, .form-sign-container .form-sign__date-img {
+    width: 40px;
+  }
+  .form-container .form-sign__date-input, .form-sign-container .form-sign__date-input {
+    height: 50px;
+    width: 600px;
+  }
+  .form-container .form-sign__additional-remember, .form-sign-container .form-sign__additional-remember {
+    font-size: 30px;
+  }
+  .form-container .form-sign__additional-remember-check, .form-sign-container .form-sign__additional-remember-check {
+    scale: 2;
+  }
+  .form-container .form-sign__submit, .form-sign-container .form-sign__submit {
+    height: 50px;
+  }
+  .form-container .form-sign hr, .form-sign-container .form-sign hr {
+    display: none;
+  }
+  .form-container .form-sign__login, .form-sign-container .form-sign__login {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

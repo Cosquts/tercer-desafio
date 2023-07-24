@@ -1,0 +1,81 @@
+
+@import "../base/extend";
+
+@media (max-width:420px) {
+   .form-sign__date-img{
+    display: none;
+   }  
+}
+
+@media (min-width:768px) {
+  .form-container{
+   margin: 0 10px;
+   padding: 10%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+      .form-sign{
+         padding: 5% 5%;
+         width: 100%;
+         height: 100%;
+         border-radius: 5px 0 0 5px;
+         margin: 0;
+      }
+      .sign-img{
+         display: flex;
+        width: 100%;
+        border: 1px solid white;
+        height: 100%;
+        border-radius: 0 5px 5px 0;
+        box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.50);
+        background-image: url("../../img/celular.png");
+         background-position: center;
+         background-size: cover;
+         flex-direction: column;
+         justify-content: start;
+         animation: card 1s ease-in;
+        
+         h2, p{
+            margin: 10% 0;
+            color: whitesmoke;
+            text-align: center;
+         }
+      } 
+      
+  }
+}
+
+@media (min-width:1024px) {
+   .form-container{padding: 2%;
+      height: 100vh;
+      .form-sign{
+justify-content: space-between;
+            &__date{
+                  &-img{
+                     width: 40px;
+                  }
+                  &-input{
+                      height: 50px;
+                      width: 600px;
+           }
+         }
+         &__additional-remember{
+            font-size: 30px;
+            &-check{
+               scale: 2;
+            }
+         }
+         &__submit{
+            height: 50px;
+            
+            
+         }
+         hr{
+            display: none;
+         }
+         &__login{
+            display: none;
+         }
+      }
+      
+   }
+}

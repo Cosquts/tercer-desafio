@@ -4,13 +4,14 @@
 
 .form-sign-container {
   @extend .form-container;
-  padding: 0 15%;
+//   padding-bottom: 30%;
 
   .form-sign {
     @extend %card-user;
     background-color: rgba(255, 0, 0, 0.226);
     border: 1px solid rgb(106, 1, 1);
-    padding: 20% 6%;
+    animation: sign-card 1s ease ;
+   
     &__tittle {
       @extend .form__tittle;
     }
@@ -21,18 +22,7 @@
     &__date {
       margin: 10px;
 
-      &--name {
-       
-     
-        input {
-            border-radius: 5px;
-            border: 0;
-            
-        }
-        // input:nth-child(3){
-        //     margin-left: 27px;
-        // }
-      }
+    
       input {
         border: 0;
         border-radius: 5px;
@@ -73,4 +63,24 @@
  
    
   }
+  .sign-img{
+    display: none;
+ } 
 }
+
+@keyframes card {
+    0%{
+        opacity: 0%;
+        scale: 0;
+    }
+
+    50%{
+        opacity: 50%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+

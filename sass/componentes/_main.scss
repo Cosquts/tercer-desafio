@@ -3,6 +3,9 @@
 
 main {
   background-image: linear-gradient($color-claro, $color-secundario);
-  height: 100vh;
+  // height: 100vh;
+  @media (max-width:420px) {
+    height: auto;
+  }
   
 }
