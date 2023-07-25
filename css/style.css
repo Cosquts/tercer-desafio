@@ -193,13 +193,19 @@ main {
   .home .home__welcome {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: tomato;
+    background-image: linear-gradient(whitesmoke, rgb(138, 1, 1));
     grid-column: 1/2;
   }
   .home .home__welcome .home__images {
-    background-color: red;
     grid-column: 2/3;
-    grid-row: 1/4;
+    grid-row: 1/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .home__welcome .home__images-img {
+    width: 300px;
   }
 }
 .contact-container {
