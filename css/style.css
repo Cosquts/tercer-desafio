@@ -180,7 +180,7 @@ main {
 
 @media (min-width: 768px) {
   .home {
-    background-color: tomato !important;
+    background-color: tomato;
   }
   .home__welcome {
     padding: 3%;
@@ -193,7 +193,6 @@ main {
   .home .home__welcome {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: linear-gradient(whitesmoke, rgb(138, 1, 1));
     grid-column: 1/2;
   }
   .home .home__welcome .home__images {
@@ -242,7 +241,7 @@ main {
 .contact-container .contact__medios-div img {
   width: 40px;
 }
-.contact-container .contact__medios-h2 {
+.contact-container .contact-h2 {
   font-size: 20px;
   margin-bottom: 0;
 }
@@ -276,6 +275,33 @@ main {
   padding: 5%;
 }
 
+@media (min-width: 768px) {
+  .contact-container .contact {
+    padding: 4% 2%;
+  }
+  .contact-container .contact__title {
+    width: 100%;
+    background-color: #2A2C34;
+    text-align: center;
+    color: #e7ab30;
+  }
+  .contact-container .contact__medios {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.35);
+  }
+  .contact-container .contact__medios-div {
+    margin: 0;
+    box-shadow: none;
+  }
+  .contact-container .contact__form {
+    padding: 5%;
+    margin: 0;
+  }
+  .contact-container .contact__form-label input {
+    height: 50px;
+  }
+}
 .nosotros {
   text-align: center;
   padding: 5%;

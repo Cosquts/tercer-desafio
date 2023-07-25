@@ -1,8 +1,9 @@
 @import "../base/mixin";
+@import "../base/variables";
 
 @media (min-width:768px){
     .home{
-        background-color: tomato !important;
+        background-color: tomato ;
     //    padding: 5%;
         &__welcome{
            padding: 3%;
@@ -18,7 +19,7 @@
             .home__welcome{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                background-image: linear-gradient(whitesmoke, rgb(138, 1, 1));
+  
                 grid-column: 1/2 ;
                 .home__images{
                    
