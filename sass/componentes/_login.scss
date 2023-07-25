@@ -5,21 +5,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   .form {
-   @extend %card-user;
+    @extend %card-user;
     background-color: whitesmoke;
-    
+
     &__tittle {
       color: $color-secundario;
       text-align: center;
       font-weight: bold;
-      margin-bottom: 20px; 
-      box-shadow: 1px 23px 15px 1px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      // box-shadow: 1px 23px 15px 1px rgba(0,0,0,0.1);
       border-radius: 5px;
       padding: 10px;
     }
-
     &__date {
       margin-bottom: 15px;
       display: flex;
@@ -31,11 +30,10 @@
         @include shadow;
         height: 40px;
       }
-      &-img{
+      &-img {
         width: 40px;
       }
     }
-
     &__additional-remember {
       display: flex;
       align-items: center;
@@ -48,13 +46,12 @@
       }
     }
     &__additional-link {
-      color: rgba(255, 0, 0, 0.90);
+      color: rgba(255, 0, 0, 0.9);
       text-align: center;
       text-decoration: none;
       font-size: 15px;
     }
-
-    &__submit{
+    &__submit {
       border: none;
       @include shadow;
       background-color: rgba(0, 60, 255, 0.8);
@@ -62,32 +59,30 @@
       border-radius: 5px;
       height: 50px;
     }
-
-   &__social{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &-icon{
-      margin: 10px;
-      &-img{
-        width: 30px;
+    &__social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-icon {
+        margin: 10px;
+        &-img {
+          width: 30px;
+        }
       }
     }
-   }
-   &__signup{
+    &__signup {
       text-align: center;
       margin: 10px;
-      
-      &-text{
+
+      &-text {
         margin: 0;
       }
-      &-link{
+      &-link {
         color: red;
         font-size: 20px;
         text-decoration: none;
-        
       }
-   }
+    }
   }
 }
