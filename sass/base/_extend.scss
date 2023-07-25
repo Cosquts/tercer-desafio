@@ -1,0 +1,30 @@
+@import "variables";
+
+%card-user{
+    margin: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.50);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20% 6%;
+    animation: card 1s ease-in;
+    @media (max-width:420px){
+        margin: 15% 0;
+    }
+}
+
+%form-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%form-tittle{
+    color: black;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 20px;
+}

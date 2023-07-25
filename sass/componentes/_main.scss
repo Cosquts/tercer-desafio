@@ -1,0 +1,11 @@
+@import "../base/variables";
+@import "../base/extend";
+
+main {
+  background-image: linear-gradient($color-claro, $color-secundario);
+  // height: 100vh;
+  @media (max-width:420px) {
+    height: auto;
+  }
+  
+}

@@ -1,0 +1,59 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+
+.barra-nav {
+  &__menu {
+    background-image: linear-gradient($color-principal,$color-secundario);
+    
+    &-header {
+      padding-right: 30px;
+
+      &-img {
+        @include logo;
+        &:active {
+          @include logo-active;
+        }
+      }
+      &-button {
+        background-color: whitesmoke;
+      }
+
+    }
+    &-main{
+        &-a{
+            color: $color-secundario;
+            border-left: 4px solid $color-secundario;
+            padding-left: 25px;
+            margin: 5px;
+            transition: all 0.2s ease;
+            &:focus{
+                transform: scale(1.04);
+                border-left: 6px solid white;
+            }
+            &:active {
+                transform: scale(0.98);
+                border-left: 6px solid white;
+            }
+        }
+        &-dropdown{
+            color: $color-secundario ;
+            border-left: 4px solid $color-secundario;
+            margin: 5px;
+            padding-left: 25px;
+            font-size: 20px;
+            &:focus{
+                border-left: 6px solid white;
+            }
+        }
+        & .dropdown-menu{
+            background-color: $color-secundario;
+            & .dropdown-item{
+                color: $color-claro;
+            }
+        }
+    }
+
+    
+  }
+}

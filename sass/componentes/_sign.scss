@@ -1,0 +1,68 @@
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+.form-sign-container {
+  @extend .form-container;
+  .form-sign {
+    @extend %card-user;
+    background-color: whitesmoke;
+    animation: sign-card 1s ease;
+    &__tittle {
+      @extend .form__tittle;
+      
+    }
+    &__section {
+      text-align: center;
+    }
+    &__date {
+      margin: 10px;
+      input {
+        @extend .form__date-input;
+      }
+    }
+    &__additional-remember {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin: 10px 0;
+      &-text {
+        margin: 0;
+      }
+    }
+    &__submit {
+      @extend .form__submit;
+    }
+    &__login {
+      @extend .form__signup;
+      &-text {
+        @extend .form__signup-text;
+      }
+      &-link {
+        color: green;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+  .sign-img {
+    display: none;
+  }
+}
+
+@keyframes card {
+  0% {
+    opacity: 0%;
+    scale: 0;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}

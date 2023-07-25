@@ -1,0 +1,69 @@
+@import "../base/variables";
+@import "../base/mixin";
+//  Estilos del nav
+header{
+  height: 76.78px;
+}
+.barra-nav {
+  &__container {
+     background-color: $color-principal;
+     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2)
+    }
+  &__left {
+
+    &-link {
+      @include nav-a;
+      &:hover {
+        transition: all 0.5 ease;
+        color: $color-secundario;
+        text-shadow: 0px 0px 2px rgb(5, 5, 5);
+      }
+      &:active {
+        transform: scale(0.98);
+        text-decoration: none;
+        text-shadow: none;
+      }
+      &:focus {
+        color: $color-secundario;
+      }
+    }
+  }
+  &__logo {
+    &-img {
+      @include logo;
+      &:active {
+        outline: 1.5px solid rgba(42, 44, 52, 0.09);
+        transform: scale(0.98);
+        box-shadow: none;
+      }
+    }
+  }
+  &__right {
+    &-link {
+      @include nav-a;
+      font-weight: bold;
+      transition: all 1s ease;
+
+      &:hover {
+        transition: all 1s ease;
+        text-shadow: 0px 0px 1px rgb(6, 6, 6);
+        color: black;
+      }
+    }
+    &-link-sign {
+      @include nav-a;
+      font-weight: bold;
+      transition: all 1s ease;
+      background-color: hsla(0, 100%, 50%, 0.582);
+      border-radius: 5px;
+      &:hover {
+        color: rgba(255, 0, 0, 0.8);
+        transition: all 1s ease;
+        text-shadow: 0px 0px 1px rgb(5, 5, 5);
+      }
+      &:focus {
+        color: rgba(255, 0, 0, 0.8);
+      }
+    }
+  }
+}

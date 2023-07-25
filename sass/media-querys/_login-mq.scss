@@ -1,0 +1,66 @@
+@import "../base/extend";
+
+@media (max-width:768px){
+    .login-img{
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    main div.form-container{
+        margin: 0 10px;
+        padding: 2% 10%;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr !important;
+        
+        .form{
+            padding: 20% 5%;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px 0 0 5px;
+            margin: 0;
+            &__signup{
+                display: none;
+            }
+        }
+    }
+    .login-img{
+        display: flex;
+       width: 100%;
+       height: 100%;
+       border-radius: 0 5px 5px 0;
+       box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.50);
+       background-image: url("../../img/celular.png");
+        background-position: center;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: start;
+        animation: card 1s ease-in;
+        &__login{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           gap: 10px;
+           margin-top: 40px;
+           &-text{
+              background-color: rgba(0, 0, 0, 0.4);
+              border-radius: 5px;
+              padding: 5px;
+              margin: 0;
+              color: white;
+           }
+           &-link{
+              @extend .login-img__login-text;
+              color: green;
+           }
+        }
+        &__h2, &__p {
+         margin: 7% 0;
+           color: whitesmoke;
+           text-align: center;
+        }
+        }
+}
+
+

@@ -1,0 +1,38 @@
+@import "../base/mixin";
+@import "../base/variables";
+
+@media (min-width:768px){
+    
+   .contact-container .contact{
+        padding: 4% 2%;
+        &__title{
+            width: 100%;
+            background-color: $color-secundario;
+            text-align: center;
+            color: $color-principal;
+        }
+        &__medios{
+            display: flex;
+            width: 100%;
+            margin: 40px;
+            @include shadow;
+            &-div{
+                margin: 0;
+                box-shadow: none;
+            }
+            &-h2{
+                font-size: 25px;
+            }
+        }
+        &__form{
+            padding: 40px;
+            margin: 0;
+           
+            &-label{
+                input{
+                    height: 50px;
+                }
+            }
+        }
+    }
+}

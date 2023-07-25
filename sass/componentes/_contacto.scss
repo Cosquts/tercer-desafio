@@ -1,0 +1,72 @@
+@import "../base/mixin";
+
+.contact-container {
+  background-color: whitesmoke;
+  .contact {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__title {
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    &__medios {
+      margin: 10% 5%;
+      height: 100%;
+      &-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10%;
+        @include shadow;
+        p {
+          text-align: center;
+          font-size: 15px;
+          margin: 0;
+        }
+        img {
+            width: 40px;
+        }
+    }
+  }
+  &-h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 10%;
+      width: 100%;
+      &-label:first-child input{
+        margin-bottom: 10px;
+      }
+      &-label {
+        input {
+          border-radius: 5px;
+          border: 0;
+          @include shadow;
+        }
+      }
+      textarea{
+        border: 0;
+        @include shadow;
+      }
+    }
+    h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    &__social{
+      @include shadow;
+      width: 100%;
+      text-align: center;
+      padding: 5%;
+    }
+  }
+}

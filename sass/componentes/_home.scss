@@ -1,0 +1,33 @@
+@import "../base/mixin";
+@import "../base/variables";
+
+.home{
+    text-align: center;
+    color: black;
+    &__welcome{
+        background-color: whitesmoke;
+        padding: 10%;
+        // text-shadow: 5px 3px 5px  black;
+       &-title{
+        color: black;
+        margin-bottom: 10%;
+        strong{
+            font-size: 40px;
+        }
+       }
+        &-h2{
+            margin-bottom: 5%;
+        }
+        &-h3{
+            margin-bottom: 5%;
+        }
+
+    }
+    &__images{
+    //    margin: 5%;
+       &-img{
+        width: 100px;
+        margin: 5%;
+       }
+    }
+}
